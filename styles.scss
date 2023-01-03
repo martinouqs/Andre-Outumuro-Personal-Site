@@ -1,5 +1,8 @@
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+html{
+  height:100%;
+}
 
 *{
   margin: 0;
@@ -11,13 +14,13 @@
 }
 //Image background
 body {
+  height:100%;
   background-image: url("assets/background.img.jpg");
   background-image: no-repeat;
   background-repeat: no-repeat;
   background-position: center -60px;
   background-size: 1371px 2170px;
   background-size: cover;
-  height:200vh;
  }
 
  header{
@@ -35,15 +38,22 @@ footer{
   bottom: 0;
   margin-top: auto;
 }
+a {
+  text-decoration: none;
+}
 
 // MENU
-      .navbar{
-        font-size: 1.8em;
-      }
+ .navbar{
+   font-size: 1.8em;
+  }
 
-      .dropdown-toggle::after {
+ .dropdown-toggle::after {
         content: none;
     }
+  .menuvar{
+   margin-left: 50px; 
+  }  
+
 // BURGER ANIMATION
 
 .animated-icon2 {
@@ -124,14 +134,24 @@ left: 50%;
 }
 // _____________END BURGER ANIMATION_________________________
 
-.container{
-  background-color: #f5edf5;
-  opacity: 0.8;
-  font-size: 20px;
-  border-radius: 20px 20px 20px 20px;
--moz-border-radius: 20px 20px 20px 20px;
--webkit-border-radius: 20px 20px 20px 20px;
-border: 1px solid #f5edf5;
-  text-align: justify;
+// .container{
+//   background-color: #f5edf5;
+//   opacity: 0.8;
+//   font-size: 20px;
+//   border-radius: 20px 20px 20px 20px;
+//   -moz-border-radius: 20px 20px 20px 20px;
+//   -webkit-border-radius: 20px 20px 20px 20px;
+//   border: 1px solid #f5edf5;
+//   text-align: justify;
+//   width: 100em; 
+// }
 
-}
+// CAROUSEL
+
+
+//
+
+
+
+
+

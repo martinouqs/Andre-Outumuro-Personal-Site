@@ -10933,6 +10933,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10943,13 +10947,13 @@ textarea.form-control-lg {
 }
 
 body {
+  height: 100%;
   background-image: url("assets/background.img.jpg");
   background-image: no-repeat;
   background-repeat: no-repeat;
   background-position: center -60px;
   background-size: 1371px 2170px;
   background-size: cover;
-  height: 200vh;
 }
 
 header {
@@ -11044,4 +11048,5 @@ footer {
   -webkit-border-radius: 20px 20px 20px 20px;
   border: 1px solid #f5edf5;
   text-align: justify;
+  width: 100em;
 }/*# sourceMappingURL=styles.css.map */
