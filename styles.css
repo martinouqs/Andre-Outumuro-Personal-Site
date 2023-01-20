@@ -10942,42 +10942,106 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poiret One";
-  color: black;
+  color:#f6f7f8;
   text-decoration: none;
 }
 
 body {
   height: 100%;
-  background-image: url("assets/background.img.jpg");
+  min-height:100vh;
+}
+
+#firstBody{
+  background-image: url("assets/background1.jpg");
   background-image: no-repeat;
   background-repeat: no-repeat;
-  background-position: center -60px;
+  background-position: center 0px;
   background-size: 1371px 2170px;
   background-size: cover;
+  height:100%;
+  height:135vh;
+}
+
+#otherBodies{
+  background-image: url("assets/background2.jpg");
+  background-image: no-repeat;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 1371px 2170px;
+  background-size: cover;
+  
 }
 
 header {
   width: 100%;
+  top:0 ;
+
 }
 
 h1, .h1 {
-  margin-left: 2.8em;
+  margin-left: 0.9em;
   padding-top: 0.3em;
-  font-weight: 1200;
+  font-weight: 6000;
   text-decoration: none;
 }
 
+/* h4{
+
+} */
+
+#miniTitleBio{
+  text-decoration: underline;
+  padding:0.5em 
+}
+#miniTitleEvents{
+  text-decoration: underline;
+}
+
+#nameLogo{
+  color: #f6f7f8;
+  margin-top: -10em;
+}
+
+#lineSeparation{
+  background-color: #f6f7f8;
+  height: 0.1px;
+  width:100%;
+  opacity: 0.6;
+}
+
+#menuAfterLogo{
+  margin-left: 1em;
+  margin-top:1.5em;
+}
+
+#menuElement{
+  color: #f6f7f8;
+  /* color: #EABE3F;
+  color: #CB6D51;
+  color: #E5A65E; */
+}
+
+
 footer {
+  text-align:center;
+  padding: 0.5em 0;
+  bottom:0;
+  width:100%;
+}
+
+#mainFooter{
   bottom: 0;
-  margin-top: auto;
 }
 
 .navbar {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
+#navbarSupportedContent{
+margin-left:7em;
+}
 .dropdown-toggle::after {
-  content: none;
+content: none;
 }
 
 .animated-icon2 {
@@ -11040,13 +11104,8 @@ footer {
 }
 
 .container {
-  background-color: #f5edf5;
-  opacity: 0.8;
   font-size: 20px;
-  border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border: 1px solid #f5edf5;
+  font-weight:;
   text-align: justify;
-  width: 100em;
-}/*# sourceMappingURL=styles.css.map */
+  margin-left: 50em;
+}

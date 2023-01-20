@@ -9,115 +9,151 @@
 	<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script type="text/javascript" src="js/script.js" defer></script>
-	<title>Andre Outumuro - Inicio</title>
+	<title>Andre Outumuro - Axenda</title>
 </head>
 
-	<body>
-    <h1 class="display-1 mt-5"><strong>André Outumuro</strong></h1>
-    <nav class="navbar navbar-expand-lg text-dark">
-      <div class="container-fluid">
-
-        <!-- LOGO/NAME OR TITLE OF THE PAGE-->
-
-
-
-        <!-- <h1 class="display-1"><a href="index.html">André</a> </p> <a href="index.html">Outumuro</a> </h1> -->
-        <!-- POSIBLE SOLUCION METER NUN DIV O H1 -->
-
-
-       <!--BURGER MENU -->
-      
-        <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-
-          <!-- MENU OPTIONS -->
-
-          <ul class="navbar-nav me-auto ms-5 mb-2 px-5 mb-lg-0">
-
-          <!-- 1ST OPTION   -->
-
-            <li class="nav-item px-1">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-            </li>
-
-          <!-- 2ND OPTION   -->
-
+	<body id="otherBodies">
+    <strong>
+      <nav class="navbar navbar-expand-lg ms-3">
+        <!-- LOGO/NAME OF THE PAGE-->
+        <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+  
+        <div class="container-fluid ">
+          
+         <!--BURGER MENU -->
+        
+          <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+            <!-- MENU OPTIONS -->
+  
+            <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0" >
+  
+            <!-- 1ST OPTION   -->
+  
+              <li class="nav-item px-1">
+                <a id="menuElement" class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+  
+            <!-- 2ND OPTION   -->
+  
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="biografia.html">Biografia</a>
+              </li>
+  
+            <!-- 3RD OPTION -->
+  
             <li class="nav-item">
-              <a class="nav-link" href="biografia.html">Biografia</a>
+              <a id="menuElement" class="nav-link" href="axenda.html">Axenda</a>
             </li>
-
-
-          <!-- 3RD OPTION -->
-          <li class="nav-item">
-            <a class="nav-link" href="foro.html">Novas</a>
-          </li>
-
-          <!-- 4TH OPTION -->
-          <li class="nav-item">
-            <a class="nav-link" href="axenda.html">Axenda</a>
-          </li>
-
-          <!-- 5TH OPTION -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Galeria
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="imaxes.html">Imaxes</a></li>
-                <li><a class="dropdown-item" href="videos.html">Videos</a></li>
-              </ul>
-            </li>
-
-
-          <!-- LANGUAGE SELECTION -->
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-            <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src = "/assets/globe.svg" alt="LanguageWorld" width="35em" height="35em"/>
+  
+            <!-- 4TH OPTION -->
+              <li  class="nav-item dropdown">
+                <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Galeria
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">ES</a></li>
-                  <li><a class="dropdown-item" href="#">GAL</a></li>
-                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="imaxes.html">Imaxes</a></li>
+                  <li><a class="dropdown-item" href="videos.html">Videos</a></li>
                 </ul>
               </li>
+               <!-- 5TH OPTION -->
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+  
+  
+            <!-- LANGUAGE SELECTION -->
+              <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">ES</a></li>
+                    <li><a class="dropdown-item" href="#">GAL</a></li>
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </li>
+              </ul>
             </ul>
-          </ul>
-
+  
+          </div>
+          
         </div>
+      </nav>
+
+      <!-- <div id="lineSeparation"></div> -->
+      <h4 id="miniTitleEvents" class="d-flex justify-content-center mt-5 fw-bold">Os meus Eventos </h4>
+      <div id="events" class="container-fluid mt-5">
+          <div class="row row-cols-auto list-inline d-flex justify-content-center">
+            <div class="col col-sm-1 list-inline-item d-flex justify-content-center">
+              <div class="badge bg-warning">
+                <h2 class="text-uppercase mt-1"><strong>16 FEB</strong></h2>
+              </div>
+            </div>
+            <div class="col col-sm-3 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="linkedin img" width="25em" height=25em"/> Casco Vello, Ourense</strong></h3></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="linkedin img" width="25em" height=25em"/> BCB</strong></h4></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center"><h4 class="text-uppercase mt-3"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="linkedin img" width="25em" height=25em"/> 00:00</strong></h4></div>
+          </div>
+          <div id="lineSeparation" class="mt-2"></div>
+          
+          <div class="row row-cols-auto list-inline d-flex justify-content-center mt-3">
+            <div class="col col-sm-1 list-inline-item d-flex justify-content-center">
+              <div class="badge bg-warning ">
+                <h2 class="text-uppercase mt-1"><strong>20 FEB</strong></h2>
+              </div>
+            </div>
+            <div class="col col-sm-3 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="linkedin img" width="25em" height=25em"/> Casco Vello, Ourense</strong></h3></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="linkedin img" width="25em" height=25em"/> BCB</strong></h4></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center"><h4 class="text-uppercase mt-3"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="linkedin img" width="25em" height=25em"/> 00:00</strong></h4></div>
+          </div>
+          <div id="lineSeparation" class="mt-2"></div>
+          <div class="row row-cols-auto list-inline d-flex justify-content-center mt-3">
+            <div class="col col-sm-1 list-inline-item d-flex justify-content-center">
+              <div class="badge bg-warning ">
+                <h2 class="text-uppercase mt-1"><strong>21 FEB</strong></h2>
+              </div>
+            </div>
+            <div class="col col-sm-3 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="linkedin img" width="25em" height=25em"/> A Valenzá, Barbadás</strong></h3></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="linkedin img" width="25em" height=25em"/> BCB</strong></h4></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center"><h4 class="text-uppercase mt-3"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="linkedin img" width="25em" height=25em"/> 17:00</strong></h4></div>
+          </div>
+          <div id="lineSeparation" class="mt-2"></div>
+          <div class="row row-cols-auto list-inline d-flex justify-content-center mt-3">
+            <div class="col col-sm-1 list-inline-item d-flex justify-content-center">
+              <div class="badge bg-warning ">
+                <h2 class="text-uppercase mt-1"><strong>21 FEB</strong></h2>
+              </div>
+            </div>
+            <div class="col col-sm-3 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="linkedin img" width="25em" height=25em"/> Casco Vello, Ourense</strong></h3></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center mt-3"><h4 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="linkedin img" width="25em" height=25em"/> BCB</strong></h4></div>
+            <div class="col col-sm-2 list-inline-item d-flex justify-content-center"><h4 class="text-uppercase mt-3"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="linkedin img" width="25em" height=25em"/> 21:00</strong></h4></div>
+          </div>
+          <div id="lineSeparation" class="mt-2"></div>
       </div>
-    </nav>
-    AQUI APARECERAN AS ACTUACIONS DATA HORA LUGAR ETC
+
+    
+    <footer>
+
+      <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></a>
+
+      <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
+
+      <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
+
+     <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></a>
+  
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 	</body>
-
-	<footer class="bg-dark text-center text-white">
-
-    <div class="position-absolute bottom-0 start-50 translate-middle-x">
-      <section class="mb-4 ">
-
-        <a class="btn btn-floating m-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
-          ><img class="img-responsive img-fluid" src = "/assets/facebook.svg" alt="LanguageWorld" width="38em" height="38em"/></i></a>
-
-        <a class="btn btn-floating m-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
-        ><img class="img-responsive img-fluid" src = "/assets/youtube.svg" alt="LanguageWorld" width="38em"height="38em"/></a> 
-
-        <a class="btn btn-floating m-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
-          ><img class="img-responsive img-fluid" src = "/assets/instagram.svg" alt="LanguageWorld" width="38em" height="38em"/></a>
-
-        <a class="btn btn-floating m-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
-          ><img class="img-responsive img-fluid" src = "/assets/linkedin.svg" alt="LanguageWorld" width="38em" height="38em"/></i></a>
-
-      </section>
-    </div>
-
-  </footer>
-
 </html>
+

@@ -15,12 +15,13 @@ html{
 //Image background
 body {
   height:100%;
-  background-image: url("assets/background.img.jpg");
+  background-image: url("assets/background.jpg");
   background-image: no-repeat;
   background-repeat: no-repeat;
   background-position: center -60px;
   background-size: 1371px 2170px;
   background-size: cover;
+  height: 200vh;
  }
 
  header{
@@ -30,16 +31,12 @@ body {
 h1{
     margin-left: 2.8em; 
     padding-top: 0.3em;
-    font-weight: 1200;
-    text-decoration: none;
+    font-weight: 3500em;
 }  
 
 footer{
   bottom: 0;
   margin-top: auto;
-}
-a {
-  text-decoration: none;
 }
 
 // MENU
@@ -147,9 +144,6 @@ left: 50%;
 // }
 
 // CAROUSEL
-
-
-//
 
 
 

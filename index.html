@@ -12,13 +12,15 @@
 	<title>Andre Outumuro - Inicio</title>
 </head>
 
-	<body class="">
-            <!-- LOGO/NAME OF THE PAGE-->
-    <h1 class="display-4 mt-4"><a href="index.html">André Outumuro</a></h1>
+	<body id="firstBody" class="min-vh-100 ">
+    <strong>
+    
+    <nav class="navbar navbar-expand-lg">
+      <!-- LOGO/NAME OF THE PAGE-->
+      <h1 class="display-3" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
 
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid ">
-
+      <div class="container-fluid">
+        
        <!--BURGER MENU -->
       
         <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,34 +30,29 @@
 
           <!-- MENU OPTIONS -->
 
-          <ul class="navbar-nav me-auto mb-2 px-5 mb-lg-0 ms-5" >
+          <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0" >
 
           <!-- 1ST OPTION   -->
 
             <li class="nav-item px-1">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              <a id="menuElement" class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
 
           <!-- 2ND OPTION   -->
 
             <li class="nav-item">
-              <a class="nav-link" href="biografia.html">Biografia</a>
+              <a id="menuElement" class="nav-link" href="biografia.html">Biografia</a>
             </li>
 
-
           <!-- 3RD OPTION -->
+
           <li class="nav-item">
-            <a class="nav-link" href="foro.html">Novas</a>
+            <a id="menuElement" class="nav-link" href="axenda.html">Axenda</a>
           </li>
 
           <!-- 4TH OPTION -->
-          <li class="nav-item">
-            <a class="nav-link" href="axenda.html">Axenda</a>
-          </li>
-
-          <!-- 5TH OPTION -->
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li  class="nav-item dropdown">
+              <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Galeria
               </a>
               <ul class="dropdown-menu">
@@ -63,16 +60,17 @@
                 <li><a class="dropdown-item" href="videos.html">Videos</a></li>
               </ul>
             </li>
+             <!-- 5TH OPTION -->
+            <li class="nav-item">
+              <a id="menuElement" class="nav-link" href="contacto.html">Contacto</a>
+            </li>
 
 
           <!-- LANGUAGE SELECTION -->
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
             <ul class="navbar-nav mb-2 mb-lg-0 me-4">
               <li class="nav-item dropdown">
-                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src = "/assets/globe.svg" alt="LanguageWorld" width="35em" height="35em"/>
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">ES</a></li>
@@ -84,34 +82,29 @@
           </ul>
 
         </div>
+        
       </div>
     </nav>
+    <!-- <div id="lineSeparation"></div> -->
 
+  <footer id="mainFooter" class="position-absolute top-100 start-50 translate-middle">
+    <sectio>
+    <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
+    ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></i></a>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
+  ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
 
-	</body>
+  <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
+    ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
 
-	<footer class="bg-dark text-center text-white">
+  <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
+    ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></i></a>
+</section>
 
-    <div class="position-absolute bottom-0 start-50 translate-middle-x">
-      <section class="mb-4 ">
+</footer>
 
-        <a class="btn btn-floating " href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
-          ><img class="img-responsive img-fluid" src = "/assets/facebook.svg" alt="LanguageWorld" width="30em" height="30em"/></i></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-        <a class="btn btn-floating " href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
-        ><img class="img-responsive img-fluid" src = "/assets/youtube.svg" alt="LanguageWorld" width="30em"height="30em"/></a> 
-
-        <a class="btn btn-floating " href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
-          ><img class="img-responsive img-fluid" src = "/assets/instagram.svg" alt="LanguageWorld" width="30em" height="30em"/></a>
-
-        <a class="btn btn-floating " href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
-          ><img class="img-responsive img-fluid" src = "/assets/linkedin.svg" alt="LanguageWorld" width="30em" height="30em"/></i></a>
-
-      </section>
-    </div>
-
-  </footer>
-
+</body>
 </html>

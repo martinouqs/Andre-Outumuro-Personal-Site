@@ -12,324 +12,103 @@
 	<title>Andre Outumuro - Inicio</title>
 </head>
 
-	<body>
-    <nav class="navbar navbar-expand-lg text-dark">
-      <div class="container-fluid">
-
-        <!-- LOGO/NAME OR TITLE OF THE PAGE-->
-
-        <!-- <h1><a href="index.html" class="navbar-brand">André</a><a href="index.html" class="navbar-brand"></p>Outumuro</a></h1> -->
-
-        <h1 class="display-1"><a href="index.html">André</a> </p> <a href="index.html">Outumuro</a> </h1>
-        <!-- POSIBLE SOLUCION METER NUN DIV O H1 -->
-
-
-       <!--BURGER MENU -->
-      
-        <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-          <!-- MENU OPTIONS -->
-
-          <ul class="navbar-nav me-auto ms-5 mb-2 px-5 mb-lg-0">
-
-          <!-- 1ST OPTION   -->
-
-            <li class="nav-item px-1">
-              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-            </li>
-
-          <!-- 2ND OPTION   -->
-
+	<body id="otherBodies">
+    <strong>
+      <nav class="navbar navbar-expand-lg ms-3">
+        <!-- LOGO/NAME OF THE PAGE-->
+        <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+  
+        <div class="container-fluid ">
+          
+         <!--BURGER MENU -->
+        
+          <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+            <!-- MENU OPTIONS -->
+  
+            <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0" >
+  
+            <!-- 1ST OPTION   -->
+  
+              <li class="nav-item px-1">
+                <a id="menuElement" class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+  
+            <!-- 2ND OPTION   -->
+  
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="biografia.html">Biografia</a>
+              </li>
+  
+            <!-- 3RD OPTION -->
+  
             <li class="nav-item">
-              <a class="nav-link" href="biografia.html">Biografia</a>
+              <a id="menuElement" class="nav-link" href="axenda.html">Axenda</a>
             </li>
-
-          <!-- 3RD OPTION -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Galeria
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="imaxes.html">Imaxes</a></li>
-                <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+  
+            <!-- 4TH OPTION -->
+              <li  class="nav-item dropdown">
+                <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Galeria
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="imaxes.html">Imaxes</a></li>
+                  <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+                </ul>
+              </li>
+               <!-- 5TH OPTION -->
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+  
+  
+            <!-- LANGUAGE SELECTION -->
+              <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">ES</a></li>
+                    <li><a class="dropdown-item" href="#">GAL</a></li>
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-
-          <!-- 4TH OPTION  -->
-
-            <li class="nav-item">
-              <a class="nav-link" href="foro.html">Novas</a>
-            </li>
-          <!-- 5TH OPTION -->
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-
-        <!-- LANGUAGE SELECTION -->
-           <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src = "/assets/globe.svg" alt="LanguageWorld" width="35em" height="35em"/>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Es</a></li>
-                <li><a class="dropdown-item" href="#">Gal</a></li>
-                <li><a class="dropdown-item" href="#">En</a></li>
-              </ul>
-            </li>
-          </ul>
+            </ul>
+  
+          </div>
+          
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- CAROUSEL GALLERY -->
-    <div class="container-fluid">
-      <main class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="0">
-                  <div class="card">
-                      <img src="/assets/fotos/1.jpg" id="imgallery" class="d-block img-fluid " alt="">
-                  </div>
-              </a>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="1">
-                  <div class="card">
-                      <img src="/assets/fotos/2.JPG" id="imgallery" class="d-block img-fluid" alt="...">
-                  </div>
-              </a>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="2">
-                  <div class="card">
-                      <img src="/assets/fotos/3.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-                  </div>
-              </a>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="3">
-                <div class="card">
-                    <img src="/assets/fotos/4.jpg" id="imgallery" class="d-block w-50 img-fluid " alt="...">
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-          <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="4">
-              <div class="card">
-                  <img src="/assets/fotos/5.jpg" id="imgallery" class="d-block img-fluid"" alt="...">
-              </div>
-          </a>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-        <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="5">
-            <div class="card">
-                <img src="/assets/fotos/6.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-            </div>
-        </a>
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-      <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="6">
-          <div class="card">
-              <img src="/assets/fotos/7.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-          </div>
-      </a>
-  </div>
-  <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="7">
-        <div class="card">
-            <img src="/assets/fotos/8.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-        </div>
-    </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="8">
-      <div class="card">
-          <img src="/assets/fotos/9.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="9">
-      <div class="card">
-          <img src="/assets/fotos/10.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="10">
-      <div class="card">
-          <img src="/assets/fotos/11.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="11">
-      <div class="card">
-          <img src="/assets/fotos/12.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="12">
-      <div class="card">
-          <img src="/assets/fotos/13.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="13">
-      <div class="card">
-          <img src="/assets/fotos/14.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="14">
-      <div class="card">
-          <img src="/assets/fotos/15.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-  <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="15">
-      <div class="card">
-          <img src="/assets/fotos/16.jpg" id="imgallery" class="d-block img-fluid" alt="...">
-      </div>
-  </a>
-</div>
+      <!-- <div id="lineSeparation"></div> -->
 
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                          <div class="carousel-inner overflow-hidden">
-                              <div class="carousel-item active">
-                                  <img src="/assets/fotos/1.jpg" class="d-block w-100" alt="">
-                                  <h5>Second slide label</h5>
-                                  <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                  <img src="/assets/fotos/2.JPG" class="d-block w-100 " alt="...">
-                                  <h5>Second slide label</h5>
-                                  <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                  <img src="/assets/fotos/3.jpg" class="d-block w-100" alt="...">
-                                  <h5>Second slide label</h5>
-                                  <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/4.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/5.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/6.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/7.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/8.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/9.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/10.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/11.JPG" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/12.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/13.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/14.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/15.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                              <div class="carousel-item">
-                                <img src="/assets/fotos/16.jpg" class="d-block w-100" alt="...">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                              </div>
-                          </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                          </button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </main>
-  </div>
 
-</main>
+
+
+    <footer>
+
+      <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></i></a>
+
+      <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
+
+      <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
+
+     <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
+      ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></i></a>
+  </section>
+  
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 	</body>
-
-	<footer class="bg-dark text-center text-white">
-
-    <div class="position-absolute bottom-0 start-50 translate-middle-x">
-      <section class="mb-4 ">
-
-        <a class="btn btn-floating m-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
-          ><img class="img-responsive" src = "/assets/facebook.svg" alt="LanguageWorld" width="38em" height="38em"/></i></a>
-
-        <a class="btn btn-floating m-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
-        ><img class="img-responsive" src = "/assets/youtube.svg" alt="LanguageWorld" width="38em"height="38em"/></a> 
-
-        <a class="btn btn-floating m-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
-          ><img class="img-responsive" src = "/assets/instagram.svg" alt="LanguageWorld" width="38em" height="38em"/></a>
-
-        <a class="btn btn-floating m-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
-          ><img class="img-responsive" src = "/assets/linkedin.svg" alt="LanguageWorld" width="38em" height="38em"/></i></a>
-
-      </section>
-    </div>
-
-  </footer>
-
 </html>
+
