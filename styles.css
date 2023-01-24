@@ -10933,6 +10933,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   height: 100%;
 }
@@ -10985,16 +10990,14 @@ h1, .h1 {
   text-decoration: none;
 }
 
-/* h4{
-
-} */
-
 #miniTitleBio{
   text-decoration: underline;
   padding:0.5em 
+  
 }
 #miniTitleEvents{
   text-decoration: underline;
+    
 }
 
 #nameLogo{
@@ -11009,16 +11012,13 @@ h1, .h1 {
   opacity: 0.6;
 }
 
-#menuAfterLogo{
+/* #menuAfterLogo{
   margin-left: 1em;
   margin-top:1.5em;
-}
+} */
 
 #menuElement{
   color: #f6f7f8;
-  /* color: #EABE3F;
-  color: #CB6D51;
-  color: #E5A65E; */
 }
 
 
@@ -11109,3 +11109,13 @@ content: none;
   text-align: justify;
   margin-left: 50em;
 }
+
+/* #gallerycontainer{
+  width:10em;} */
+
+  #date{
+    background-image: url("/assets/icons/calendar.png");
+    background-size: 25em 25em;
+    background-size: cover;
+    
+  }
