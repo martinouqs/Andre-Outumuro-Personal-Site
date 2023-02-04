@@ -12,7 +12,7 @@
 	<title>Andre Outumuro - Inicio</title>
 </head>
 
-	<body id="otherBodies">
+	<body id="contactBody">
     <strong>
       <nav class="navbar navbar-expand-lg ms-3">
         <!-- LOGO/NAME OF THE PAGE-->
@@ -84,26 +84,48 @@
           
         </div>
       </nav>
+     
 
-      <!-- <div id="lineSeparation"></div> -->
+      <div class="container-fluid">
+        <h2 id="miniTitleContact" class="fw-bold mb-5"> Contacto</h2>
+          <form id="form" action="PHP/send.php" class="form" method="POST">
 
+            <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
+            ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></i></a>
+      
+            <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
+            ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
+      
+            <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
+            ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
+      
+           <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
+            ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></i></a>
 
+            <div class="col-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input id="nombre" name="nombre type="text" class="form-control" placeholder="Nombre">
+            </div>            
+            
+            <div class="col-6">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" class="form-control" placeholder="nombre@email.com">
+            </div>
 
+            <div class="col-6">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            	
+            <div class="col-6 btn-primary">
+              <button type="submit" class="btn btn-outline-success">Enviar</button>
+            </div>
+
+          </form>
+      </div>
+      
 
     <footer>
-
-      <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></i></a>
-
-      <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
-
-      <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
-
-     <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></i></a>
-  </section>
   
     </footer>
 
