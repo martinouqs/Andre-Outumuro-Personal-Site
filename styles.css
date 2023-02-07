@@ -10939,6 +10939,8 @@ textarea.form-control-lg {
   display: none;
 }
 
+//CSS GENERAL
+
 html {
   height: 100%;
 }
@@ -10962,10 +10964,61 @@ body {
   background-image: no-repeat;
   background-repeat: no-repeat;
   background-position: center 0px;
-  background-size: 1371px 2170px;
+  /* background-size: 1371px 2170px; */
+  background-size: 100% 100%;
   background-size: cover;
   height:100%;
-  height:135vh;
+  max-height:135vh;
+  background-color:black;
+}
+
+h1 {
+  margin-left: 0.5em;
+  float:left;
+  padding-top: 0.3em;
+  font-weight: 6000;
+  text-decoration: none;
+}
+#nameLogo{
+  color: #f6f7f8;
+  margin-top: -10em;
+  text-decoration: underline
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    margin-left: 0.1em;
+    padding-top: 0.3em;
+    float:left;
+  }
+  #firstBody{
+  background-position: -290px 0px;
+  max-height:85vh;
+
+  background-size: cover;
+  height:100%;
+  max-height:135vh;
+  }
+
+  /* #wholeMenu{
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    top:0;
+    background-color:black;
+    z-index:10;
+    width:100%;
+    height:100%;
+    opacity:0.9;
+    transition:top 1s ease;
+    right:0;
+    left:0;
+
+  }
+  #menuAfterLogo{
+
+  } */
 }
 
 #otherBodies{
@@ -10975,6 +11028,12 @@ body {
   background-position: 0px 0px;
   background-size: 1371px 2170px;
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  #otherBodies{
+    background-position: -610px 0px;
+    background-size: cover;
+  }
 }
 
 #contactBody{
@@ -10986,55 +11045,27 @@ body {
   background-size: cover;
 }
 
-header {
-  width: 100%;
-  top:0 ;
 
-}
-
-h1, .h1 {
-  margin-left: 0.9em;
-  padding-top: 0.3em;
-  font-weight: 6000;
-  text-decoration: none;
-}
-
-#miniTitleBio{
-  text-decoration: underline;
-  padding:0.5em;
-  
-}
 #miniTitleEvents{
   text-decoration: underline;
     
-}
-
-#nameLogo{
-  color: #f6f7f8;
-  margin-top: -10em;
-}
-
-#lineSeparation{
-  background-color: #f6f7f8;
-  height: 0.1px;
-  width:100%;
-  opacity: 0.6;
 }
 
 #menuElement{
   color: #f6f7f8;
 }
 
-
 footer {
   text-align:center;
   padding: 0.5em 0;
-  bottom:0;
-  width:100%;
+  bottom: 0;
+  width: 100%;
+  bottom:0px;
 }
 
 #mainFooter{
   bottom: 0;
+  position:absolute
 }
 
 .navbar {
@@ -11044,6 +11075,7 @@ footer {
 #navbarSupportedContent{
 margin-left:7em;
 }
+
 .dropdown-toggle::after {
 content: none;
 }
@@ -11051,11 +11083,14 @@ content: none;
 .animated-icon2 {
   width: 30px;
   height: 20px;
-  position: relative;
+  display:right;
   margin: 0px;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  z-index:100;
+  margin-top:1em;
+  margin-left:0.3em;
 }
 
 .animated-icon2 span {
@@ -11106,12 +11141,30 @@ content: none;
   width: 0%;
   left: 50%;
 }
+ul.navbar-nav li{
+  cursor: pointer;
+  -webkit-transition: margin 0.9s ease-out;
+  -moz-transition: margin 0.9s ease-out;
+  -ms-transition: margin 0.9s ease-out;
+  transition: margin 0.9s ease-out;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+ }
 
-.container {
-  font-size: 20px;
-  font-weight:;
-  text-align: justify;
-  margin-left: 50em;
+.navbar-nav li:hover > ul{
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  
+}
+
+ul.navbar-nav li:hover, ul.navbar-nav li:focus {
+  color:#B7950B ;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24),0 9px 50px 0 rgba(0,0,0,0.19);
+  background-size: 100% 2px;
 }
 
   #galleryContainer{
@@ -11119,6 +11172,7 @@ content: none;
     margin-left: 6em;
     margin-bottom:5em;
   }
+
 
   #imgallery{
     height:10em;
@@ -11137,6 +11191,34 @@ content: none;
     width: 46em;
     margin-top:4em;
   }
+  #miniTitleGallery{
+    text-decoration: underline;
+    margin-top: 4em;
+    margin-left:1em;
+    
+  }
+
+  @media screen and (max-width: 767px) {
+    #galleryContainer{
+      margin-top:0.5em;
+      width:95%;
+      margin-bottom:1em;
+    }
+    #miniTitleGallery{
+      margin-top: 0.5em;
+      margin-left: 0.5em;
+    }
+    #rowGallery{
+      width: 95%;
+      margin-top:0.1em;
+    }
+    #imgallery{
+      height:10em;
+      width: 10em;
+      align-items: center;
+    }
+  }
+
 
   ul.timeline {
     list-style-type: none;
@@ -11159,7 +11241,6 @@ ul.timeline:before {
 
 li.timeline-item {
     margin: 1px 0;
-    padding
 }
 
 li.timeline-item::before {
@@ -11200,9 +11281,6 @@ li.timeline-item::before {
   margin-top: 2.6em;
 }
 
-#eventsContainer{
-margin-left:-12em;
-}
 #miniTitleEvents{
   margin-top: 2.6em;
   margin-left:10em;
@@ -11210,36 +11288,118 @@ margin-left:-12em;
 #eventDay{
   margin-top:-0.5em;
 }
+
+#contactContainer{
+  width:30em;
+  padding: 1em;
+  box-sizing:border-box;
+  float:right;
+  margin-right:1.5em;
+}
 #miniTitleContact{
+  text-decoration:underline;
+}
+
+#socialsContact{
+text-align:center;
+}
+
+#mailContact{
+  padding:0.5em;
+}
+
+#messageContact{
+  padding:1em;
+  text-align:center;
+}
+
+#sendContact{
+  text-align:center;
+}
+
+#nombre{
+  border-color:black;
+}
+#sendContactButton{
+  border-color:black;
+}
+#email{
+  border-color:black;
+}
+#mensaje{
+  border-color:black;
+  border-radius: 2%
+}
+form{
+  margin-right:4em;
+}
+#formContent{
+  box-sizing; border-box;
+  padding:20px;
+  padding-top:50px;
+  border-radius: 2%;
+  background-color: rgb(255, 255,255,0.8 );
+}
+#firstLineInputs{
+  display:inli-block;
+}
+textarea{
+  width:100%;
+  min-height: 10em; 
+  max-height: 10em;
+  font-size:4em;
+  padding:1em;
+}
+#sendContact{
+  border-color:black;
+}
+#placeLocation{
+  margin-left:2.5em;
+}
+#concelloLocation{
+  margin-left:3em;
+}
+
+#locationImg{
+float:left;
+left:0;
+}
+
+#groupImg{
+  float:left;
+  left:0;
+}
+#groupTxt{
+ margin-left:2.4em;
+}
+
+//-------BIOGRAFÍA ---------
+
+#miniTitleBio{
+  text-decoration: underline;
+  padding:0.5em;
+  font-size: calc(1.275rem + 0.3vw);
 
 }
 
- ul.navbar-nav li{
-  cursor: pointer;
-  -webkit-transition: margin 0.9s ease-out;
-  -moz-transition: margin 0.9s ease-out;
-  -ms-transition: margin 0.9s ease-out;
-  transition: margin 0.9s ease-out;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .3s;
- }
-
-.navbar-nav li:hover > ul{
-  display: block;
-  margin-top: 8px;
-  font-size: 14px;
-  
+#bioText{
+  float:left;
+  margin-left: 3rem;
+  width: 45em;
+  margin-top: 5em;
+  text-align: justify;
+  font-size: 1.25rem;
 }
 
-ul.navbar-nav li:hover, ul.navbar-nav li:focus {
-  color:#B7950B ;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24),0 9px 50px 0 rgba(0,0,0,0.19);
-  background-size: 100% 2px;
-}
-
-{
-  color:black;
+@media screen and (max-width: 767px) {
+  #bioText{
+    margin-left: 0.5rem;
+    width: 95%;
+    margin-top: 3em;
+    font-size: 15px;
+    margin-bottom:2em;
+  }
+  #miniTitleBio{
+    margin-top: 2em;
+  }
 }

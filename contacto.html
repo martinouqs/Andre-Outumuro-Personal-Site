@@ -15,16 +15,17 @@
 	<body id="contactBody">
     <strong>
       <nav class="navbar navbar-expand-lg ms-3">
-        <!-- LOGO/NAME OF THE PAGE-->
-        <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
-  
-        <div class="container-fluid ">
+        <div id="wholeMenu" class="container-fluid ">
+          <div id="menuHeader">
+           <!-- LOGO/NAME OF THE PAGE-->
+           <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+   
+           <!--BURGER MENU -->
           
-         <!--BURGER MENU -->
-        
-          <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-          </button>
+            <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+         </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
             <!-- MENU OPTIONS -->
@@ -86,42 +87,54 @@
       </nav>
      
 
-      <div class="container-fluid">
-        <h2 id="miniTitleContact" class="fw-bold mb-5"> Contacto</h2>
-          <form id="form" action="PHP/send.php" class="form" method="POST">
+      <div id="contactContainer" class="container-fluid mt-5 mb-5">
+        <h2 id="miniTitleContact" class="fw-bold mb-5
+        ">Contacto</h2>
 
-            <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
-            ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></i></a>
-      
-            <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
-            ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
-      
-            <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
-            ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
-      
-           <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
-            ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></i></a>
+          <form id="form" action="PHP/send.php" class="row form" method="POST">
 
-            <div class="col-6">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input id="nombre" name="nombre type="text" class="form-control" placeholder="Nombre">
-            </div>            
+            <div id="formContent">
+                          
+              <div id="firstLineInputs" class="row">
+                <div class="col-5">
+                  <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Nome">
+                </div>
+                <div class="col-7">
+                  <input id="email" name="email" type="email" class="form-control" placeholder="nome@email.com">
+                </div>
+              </div>
+
+              <div class="col-12 mt-4">
+                <textarea id="mensaje" name="mensaje" cols="50" rows="10" placeholder="Mensaxe"></textarea>
+              </div>
+                
+              <div id="sendContact" class="col">
+                <button id="sendContactButton" type="submit" class="btn btn-light mt-4">Enviar</button>
+              </div>
+
+            </div>
             
-            <div class="col-6">
-              <label for="email" class="form-label">Email</label>
-              <input id="email" name="email" type="email" class="form-control" placeholder="nombre@email.com">
-            </div>
-
-            <div class="col-6">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" cols="30" rows="10"></textarea>
-            </div>
-            	
-            <div class="col-6 btn-primary">
-              <button type="submit" class="btn btn-outline-success">Enviar</button>
-            </div>
-
           </form>
+          <div id="messageContact" class="mt-4">
+            <h3 id="mailContact"> <img alt="MailIcon" width="25em" height="25em" src="/assets/icons/mail.png"> <strong>info@andreoutumuro.com</strong></h3>
+          </div>
+
+          <div id="socialsContact" class="mt-3">
+   
+            <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
+              ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></i></a>
+        
+              <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
+              ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
+        
+              <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
+              ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
+        
+            <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
+              ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></i></a>
+    
+        </div>
+        
       </div>
       
 

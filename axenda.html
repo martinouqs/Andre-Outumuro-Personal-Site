@@ -15,16 +15,17 @@
 	<body id="otherBodies">
     <strong>
       <nav class="navbar navbar-expand-lg ms-3">
-        <!-- LOGO/NAME OF THE PAGE-->
-        <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
-  
-        <div class="container-fluid ">
+        <div id="wholeMenu" class="container-fluid ">
+          <div id="menuHeader">
+           <!-- LOGO/NAME OF THE PAGE-->
+           <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+   
+           <!--BURGER MENU -->
           
-         <!--BURGER MENU -->
-        
-          <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-          </button>
+            <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+         </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
   
             <!-- MENU OPTIONS -->
@@ -90,24 +91,37 @@
   <h2 id="miniTitleEvents" class="fw-bold mb-5"> Axenda </h2>
 
   <div id="rowEvents" class="row">
-    <div class="col-lg-7 mx-auto">
+    <div class="col-11 mx-auto">
 
       <h2><strong> XANEIRO 2023</strong></h2>
 
         <ul class="timeline">
             <li class="timeline-item rounded mt-3 ml-1 p-4">
-              <div class="row row-cols-auto list-inline justify-content-center">
-                <div class="col">
+              <div class="row row-cols-auto list-inline ">
+                <div class="col" >
                   <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n16.png"> </h2>
                 </div>
-                <div class="col">
-                  <h5 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> 
-                      Café Latino
-                   <div class="justify-content-md-center"> Ourense </div>
-                  </strong></h5>
+                <div class="col-3" id="location">
+                    <div id="locationImg">
+                        <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> 
+                    </div>
+                    <div id="locationTxt">
+                      <div id="placeLocation">
+                        <h5 class="text-uppercase"><strong>Café Latino</strong></h5>
+                      </div>
+                      <div id="concelloLocation">
+                        <h5 class="text-uppercase"><strong>Ourense</strong></h5>
+                      </div>
+                    </div>
                 </div>
-                <div class="col">
-                  <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/> Alfonso Medela Trío</strong></h5>
+                <div class="col-3 ">
+                  <div id="groupImg">
+                    <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                  </div>
+                  <div id="groupTxt">
+                    <h5 class="text-uppercase"><strong> Alfonso Medela Trío</strong></h5>
+                  </div>
+
                 </div>
                 <div class="col">
                   <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 22:30</strong></h5>
@@ -118,78 +132,141 @@
         </ul>
 
     </div>
-    <div class="col-lg-7 mx-auto">
+    <div class="col-11 mx-auto">
       <h2><strong> FEBREIRO 2023</strong></h2>
         <ul class="timeline">
           <li class="timeline-item rounded mt-3 ml-1 p-4">
-            <div class="row row-cols-auto list-inline justify-content-center">
-              <div class="col">
+            <div class="row row-cols-auto list-inline ">
+              <div class="col" >
                 <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n16.png"> </h2>
               </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> Café Latino Ourense</strong></h5>
+              <div class="col-3" id="location">
+                  <div id="locationImg">
+                      <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> 
+                  </div>
+                  <div id="locationTxt">
+                    <div id="placeLocation">
+                      <h5 class="text-uppercase"><strong>Casco Vello</strong></h5>
+                    </div>
+                    <div id="concelloLocation">
+                      <h5 class="text-uppercase"><strong>Ourense</strong></h5>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-3 ">
+                <div id="groupImg">
+                  <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                </div>
+                <div id="groupTxt">
+                  <h5 class="text-uppercase"><strong> Charanga BCB</strong></h5>
+                </div>
+
               </div>
               <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/> Alfonso Medela Trío</strong></h5>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 22:30</strong></h5>
+                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 00:00</strong></h5>
               </div>
               
             </div>
           </li>
-          <li class="timeline-item rounded ml-1 p-4">
-            <div class="row row-cols-auto list-inline justify-content-center">
-              <div class="col">
-                <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n16.png"> </h2>
+          <li class="timeline-item rounded mt-3 ml-1 p-4">
+            <div class="row row-cols-auto list-inline ">
+              <div class="col" >
+                <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n20.png"> </h2>
+              </div>
+              <div class="col-3" id="location">
+                  <div id="locationImg">
+                      <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> 
+                  </div>
+                  <div id="locationTxt">
+                    <div id="placeLocation">
+                      <h5 class="text-uppercase"><strong>Casco Vello</strong></h5>
+                    </div>
+                    <div id="concelloLocation">
+                      <h5 class="text-uppercase"><strong>Ourense</strong></h5>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-3 ">
+                <div id="groupImg">
+                  <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                </div>
+                <div id="groupTxt">
+                  <h5 class="text-uppercase"><strong> Charanga BCB</strong></h5>
+                </div>
+
               </div>
               <div class="col">
-                <h5 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> Café Latino Ourense</strong></h5>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/> Alfonso Medela Trío</strong></h5>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 22:30</strong></h5>
-              </div>
-              
-            </div>
-          </li>
-          <li class="timeline-item rounded ml-1 p-4">
-            <div class="row row-cols-auto list-inline justify-content-center">
-              <div class="col">
-                <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n16.png"> </h2>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> Café Latino Ourense</strong></h5>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/> Alfonso Medela Trío</strong></h5>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 22:30</strong></h5>
-              </div>
-              
-            </div>
-          </li>
-          <li class="timeline-item rounded ml-1 p-4">
-            <div class="row row-cols-auto list-inline justify-content-center">
-              <div class="col">
-                <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n16.png"> </h2>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong> <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> Café Latino Ourense</strong></h5>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/> Alfonso Medela Trío</strong></h5>
-              </div>
-              <div class="col">
-                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 22:30</strong></h5>
+                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 00:00</strong></h5>
               </div>
               
             </div>
           </li>
-            
+          <li class="timeline-item rounded mt-3 ml-1 p-4">
+            <div class="row row-cols-auto list-inline ">
+              <div class="col" >
+                <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n21.png"> </h2>
+              </div>
+              <div class="col-3" id="location">
+                  <div id="locationImg">
+                      <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> 
+                  </div>
+                  <div id="locationTxt">
+                    <div id="placeLocation">
+                      <h5 class="text-uppercase"><strong>A Valenzá</strong></h5>
+                    </div>
+                    <div id="concelloLocation">
+                      <h5 class="text-uppercase"><strong>Barbadás</strong></h5>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-3 ">
+                <div id="groupImg">
+                  <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                </div>
+                <div id="groupTxt">
+                  <h5 class="text-uppercase"><strong> Charanga BCB</strong></h5>
+                </div>
+
+              </div>
+              <div class="col">
+                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 17:00</strong></h5>
+              </div>
+              
+            </div>
+          </li>
+          <li class="timeline-item rounded mt-3 ml-1 p-4">
+            <div class="row row-cols-auto list-inline ">
+              <div class="col" >
+                <h2 class="text-uppercase"> <img id="eventDay" src="/assets/icons/n21.png"> </h2>
+              </div>
+              <div class="col-3" id="location">
+                  <div id="locationImg">
+                      <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/> 
+                  </div>
+                  <div id="locationTxt">
+                    <div id="placeLocation">
+                      <h5 class="text-uppercase"><strong>Casco Vello</strong></h5>
+                    </div>
+                    <div id="concelloLocation">
+                      <h5 class="text-uppercase"><strong>Ourense</strong></h5>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-3 ">
+                <div id="groupImg">
+                  <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                </div>
+                <div id="groupTxt">
+                  <h5 class="text-uppercase"><strong> Charanga BCB</strong></h5>
+                </div>
+
+              </div>
+              <div class="col">
+                <h5 class="text-uppercase"><strong><img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/> 21:00</strong></h5>
+              </div>
+              
+            </div>
+          </li>
         </ul>
 
     </div>

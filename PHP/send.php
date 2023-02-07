@@ -4,7 +4,7 @@ $correo = $_POST['correo'];
 $nombre = $_POST['nombre'];
 $mensaje = $_POST['mensaje'];
 
-$destinatario = "andreoutumuro@gmail.com";
+$destinatario = "info@andreoutumuro.com";
 $cuerpo = '
     <html> 
         <head> 
