@@ -15,4 +15,4 @@
       var bsCarousel = bootstrap.Carousel.getInstance(myCarousel)
       bsCarousel.to(trigger.dataset.bsSlideTo)
   })
-
+  

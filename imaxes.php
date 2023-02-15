@@ -9,6 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script type="text/javascript" src="js/script.js" defer></script>
+  <link rel="icon" href="/assets//icons/saxoTitle.png" type="image/icon type">
 	<title>Andre Outumuro - Inicio</title>
 </head>
 
@@ -32,58 +33,56 @@
             <!-- MENU OPTIONS -->
   
             <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0 float-end mt-4" >
-  
-            <!-- 1ST OPTION   -->
-  
-              <li class="nav-item px-1">
-                <a id="menuElement" class="nav-link" aria-current="page" href="index.html">Inicio</a>
-              </li>
-  
-            <!-- 2ND OPTION   -->
-  
-              <li class="nav-item">
-                <a id="menuElement" class="nav-link" href="biografia.html">Biografia</a>
-              </li>
-  
-            <!-- 3RD OPTION -->
-  
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="axenda.html">Axenda</a>
+
+          <!-- 1ST OPTION   -->
+
+            <li  class="nav-item px-1" >
+              <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
             </li>
-  
-            <!-- 4TH OPTION -->
-              <li  class="nav-item dropdown">
-                <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Galería
+
+          <!-- 2ND OPTION   -->
+
+            <li class="nav-item">
+              <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
+            </li>
+
+          <!-- 3RD OPTION -->
+
+          <li  class="nav-item">
+            <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
+          </li>
+
+          <!-- 4TH OPTION -->
+            <li  class="nav-item dropdown">
+              <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Galeria
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="imaxes.php">Imaxes</a></li>
+                <li><a class="dropdown-item" href="videos.php">Videos</a></li>
+              </ul>
+            </li>
+
+             <!-- 5TH OPTION -->
+            <li class="nav-item">
+              <a id="menuElement" class="nav-link" href="contacto.php">Contacto</a>
+            </li>
+
+          <!-- LANGUAGE SELECTION -->
+            <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="imaxes.html">Imaxes</a></li>
-                  <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+                  <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>
+                  <li><a href="index.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
+                  <li><a href="index.php?lang=en" class="dropdown-item" value="en">EN</a></li>
                 </ul>
               </li>
-               <!-- 5TH OPTION -->
-              <li class="nav-item">
-                <a id="menuElement" class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-  
-  
-            <!-- LANGUAGE SELECTION -->
-              <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-                <li class="nav-item dropdown">
-                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">ES</a></li>
-                    <li><a class="dropdown-item" href="#">GAL</a></li>
-                    <li><a class="dropdown-item" href="#">EN</a></li>
-                  </ul>
-                </li>
-              </ul>
             </ul>
-  
+          </ul>
           </div>
-          
         </div>
       </nav>
 
@@ -93,112 +92,112 @@
   <h2 id="miniTitleGallery" class="fw-bold" >Galería fotográfica</h2>
   
   <main id="rowGallery" class="row">
-      <div class="col-sm-12 col-md-6 col-lg-1 mb-4 w-25" >
+      <div id="galleryCol" class="col-4 col-md-3 mb-4 " >
           <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="0">
               <div class="card">
                   <img src="/assets/fotos/1.jpg" id="imgallery"   class="d-block img-fluid rounded" alt="">
               </div>
           </a>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+      <div id="galleryCol" class="col-4 col-md-3 mb-4">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="1">
               <div class="card">
                   <img src="/assets/fotos/2.JPG" id="imgallery" class="d-block img-fluid rounded" alt="...">
               </div>
           </a>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+      <div id="galleryCol" class="col-4 col-md-3 mb-4 ">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="2">
               <div class="card">
                   <img src="/assets/fotos/3.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
               </div>
           </a>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+      <div id="galleryCol" class="col-4 col-md-3 mb-4 ">
         <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="3">
             <div class="card">
                 <img src="/assets/fotos/4.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
             </div>
         </a>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+    <div id="galleryCol" class="col-4 col-md-3 mb-4">
       <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="4">
           <div class="card">
               <img src="/assets/fotos/5.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
           </div>
       </a>
   </div>
-  <div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+  <div id="galleryCol" class="col-4 col-md-3  mb-4">
     <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="5">
         <div class="card">
             <img src="/assets/fotos/6.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
         </div>
     </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
   <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="6">
       <div class="card">
           <img src="/assets/fotos/7.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
       </div>
   </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="7">
     <div class="card">
         <img src="/assets/fotos/8.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
     </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="8">
   <div class="card">
       <img src="/assets/fotos/9.jpg" id="imgallery" class="d-block img-fluid" alt="...">
   </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="9">
   <div class="card">
       <img src="/assets/fotos/10.jpg" id="imgallery" class="d-block img-fluid" alt="...">
   </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="10">
   <div class="card">
       <img src="/assets/fotos/11.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
   </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="11">
   <div class="card">
       <img src="/assets/fotos/12.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
   </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="12">
   <div class="card">
       <img src="/assets/fotos/13.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
   </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="13">
   <div class="card">
       <img src="/assets/fotos/14.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
   </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="14">
   <div class="card">
       <img src="/assets/fotos/15.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
   </div>
 </a>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4 mb-4 w-25">
+<div id="galleryCol" class="col-4 col-md-3 mb-4">
 <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="15">
   <div class="card">
       <img src="/assets/fotos/16.jpg" id="imgallery" class="d-block img-fluid rounded" alt="...">
@@ -225,15 +224,15 @@
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/4.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">>Sesión de fotos a cargo de Lorena Domínguez</h5>
+                            <h5 class="text-dark text-center">Sesión de fotos a cargo de Lorena Domínguez</h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/5.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">>Sesión de fotos a cargo de Lorena Domínguez</h5>
+                            <h5 class="text-dark text-center">Sesión de fotos a cargo de Lorena Domínguez</h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/6.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">>Sesión de fotos a cargo de Lorena Domínguez</h5>
+                            <h5 class="text-dark text-center">Sesión de fotos a cargo de Lorena Domínguez</h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/7.jpg" class="d-block w-100" alt="...">
@@ -242,7 +241,6 @@
                           <div class="carousel-item">
                             <img src="/assets/fotos/8.jpg" class="d-block w-100" alt="...">
                             <h5 class="text-dark text-center">Coa charanga BCB na torre de Vilanova dos Infantes. 2019.</h5>
-                            <p>Coa charanga BCB na torre de Vilanova dos Infantes. 2019.</p>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/9.jpg" class="d-block w-100" alt="...">
@@ -292,7 +290,6 @@
   </main>
 </div>
 
-</main>
     <footer>
 
       <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
@@ -306,11 +303,9 @@
 
      <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
       ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></i></a>
-  </section>
   
     </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
 	</body>
 </html>

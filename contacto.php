@@ -9,6 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script type="text/javascript" src="js/script.js" defer></script>
+  <link rel="icon" href="/assets//icons/saxoTitle.png" type="image/icon type">
 	<title>Andre Outumuro - Inicio</title>
 </head>
 
@@ -31,55 +32,55 @@
             <!-- MENU OPTIONS -->
   
             <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0 float-end mt-4" >
-  
-            <!-- 1ST OPTION   -->
-  
-              <li class="nav-item px-1">
-                <a id="menuElement" class="nav-link" aria-current="page" href="index.html">Inicio</a>
-              </li>
-  
-            <!-- 2ND OPTION   -->
-  
-              <li class="nav-item">
-                <a id="menuElement" class="nav-link" href="biografia.html">Biografia</a>
-              </li>
-  
-            <!-- 3RD OPTION -->
-  
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="axenda.html">Axenda</a>
+
+          <!-- 1ST OPTION   -->
+
+            <li  class="nav-item px-1" >
+              <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
             </li>
-  
-            <!-- 4TH OPTION -->
-              <li  class="nav-item dropdown">
-                <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Galeria
+
+          <!-- 2ND OPTION   -->
+
+            <li class="nav-item">
+              <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
+            </li>
+
+          <!-- 3RD OPTION -->
+
+          <li  class="nav-item">
+            <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
+          </li>
+
+          <!-- 4TH OPTION -->
+            <li  class="nav-item dropdown">
+              <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Galeria
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="imaxes.php">Imaxes</a></li>
+                <li><a class="dropdown-item" href="videos.php">Videos</a></li>
+              </ul>
+            </li>
+
+             <!-- 5TH OPTION -->
+            <li class="nav-item">
+              <a id="menuElement" class="nav-link" href="contacto.php">Contacto</a>
+            </li>
+
+          <!-- LANGUAGE SELECTION -->
+            <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="imaxes.html">Imaxes</a></li>
-                  <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+                  <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>
+                  <li><a href="index.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
+                  <li><a href="index.php?lang=en" class="dropdown-item" value="en">EN</a></li>
                 </ul>
               </li>
-               <!-- 5TH OPTION -->
-              <li class="nav-item">
-                <a id="menuElement" class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-  
-  
-            <!-- LANGUAGE SELECTION -->
-              <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-                <li class="nav-item dropdown">
-                  <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">ES</a></li>
-                    <li><a class="dropdown-item" href="#">GAL</a></li>
-                    <li><a class="dropdown-item" href="#">EN</a></li>
-                  </ul>
-                </li>
-              </ul>
             </ul>
+          </ul>
   
           </div>
           
@@ -116,7 +117,7 @@
             
           </form>
           <div id="messageContact" class="mt-4">
-            <h3 id="mailContact"> <img alt="MailIcon" width="25em" height="25em" src="/assets/icons/mail.png"> <strong>info@andreoutumuro.com</strong></h3>
+            <h3 id="mailContact"> <img id="imgMailContact" alt="MailIcon" width="25em" height="25em" src="/assets/icons/mail.png"> <strong>info@andreoutumuro.com</strong></h3>
           </div>
 
           <div id="socialsContact" class="mt-3">
@@ -136,8 +137,7 @@
         </div>
         
       </div>
-      
-
+    
     <footer>
   
     </footer>
