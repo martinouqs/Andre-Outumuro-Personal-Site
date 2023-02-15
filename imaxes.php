@@ -1,3 +1,8 @@
+<?php 
+
+require 'lang.php';
+
+?>
 <!DOCTYPE html>
 <html lang="gal">
 		<!--Metadata-->
@@ -19,7 +24,7 @@
       <div id="wholeMenu" class="container-fluid ">
        <div id="menuHeader">
         <!-- LOGO/NAME OF THE PAGE-->
-        <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+        <h1 class="display-4" ><a id="nameLogo" href="index.php" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
 
         <!--BURGER MENU -->
        
@@ -34,54 +39,54 @@
   
             <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0 float-end mt-4" >
 
-          <!-- 1ST OPTION   -->
+              <!-- 1ST OPTION   -->
 
-            <li  class="nav-item px-1" >
-              <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
-            </li>
+                <li  class="nav-item px-1" >
+                  <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
+                </li>
 
-          <!-- 2ND OPTION   -->
+              <!-- 2ND OPTION   -->
 
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
-            </li>
+                <li class="nav-item">
+                  <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
+                </li>
 
-          <!-- 3RD OPTION -->
+              <!-- 3RD OPTION -->
 
-          <li  class="nav-item">
-            <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
-          </li>
-
-          <!-- 4TH OPTION -->
-            <li  class="nav-item dropdown">
-              <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Galeria
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="imaxes.php">Imaxes</a></li>
-                <li><a class="dropdown-item" href="videos.php">Videos</a></li>
-              </ul>
-            </li>
-
-             <!-- 5TH OPTION -->
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="contacto.php">Contacto</a>
-            </li>
-
-          <!-- LANGUAGE SELECTION -->
-            <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>
-                  <li><a href="index.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
-                  <li><a href="index.php?lang=en" class="dropdown-item" value="en">EN</a></li>
-                </ul>
+              <li  class="nav-item">
+                <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
               </li>
-            </ul>
-          </ul>
+
+              <!-- 4TH OPTION -->
+                <li  class="nav-item dropdown">
+                  <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?= __('Gallery')?>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
+                    <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
+                  </ul>
+                </li>
+
+                <!-- 5TH OPTION -->
+                <li class="nav-item">
+                  <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
+                </li>
+
+              <!-- LANGUAGE SELECTION -->
+                <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="imaxes.php?lang=es" class="dropdown-item" value="es">ES</a></li>
+                      <li><a href="imaxes.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
+                      <li><a href="imaxes.php?lang=en" class="dropdown-item" value="en">EN</a></li>
+                    </ul>
+                  </li>
+                </ul>
+</ul>
           </div>
         </div>
       </nav>
@@ -89,7 +94,7 @@
 <!-- CAROUSEL GALLERY -->
 <div id="galleryContainer" class="container-fluid">
   
-  <h2 id="miniTitleGallery" class="fw-bold" >Galería fotográfica</h2>
+  <h2 id="miniTitleGallery" class="fw-bold" ><?= __('GalleryTitle')?></h2>
   
   <main id="rowGallery" class="row">
       <div id="galleryCol" class="col-4 col-md-3 mb-4 " >
@@ -212,68 +217,68 @@
                       <div class="carousel-inner overflow-hidden">
                           <div class="carousel-item active">
                               <img src="/assets/fotos/1.jpg" class="d-block w-100" alt="">
-                              <h5 class="text-dark text-center">Tocando no lexendario club belga L'Archiduc</h5>
+                              <h5 class="text-dark text-center"><?= __('D1')?></h5>
                           </div>
                           <div class="carousel-item">
                               <img src="/assets/fotos/2.JPG" class="d-block w-100 " alt="...">
-                              <h5 class="text-dark text-center">Concerto no claustro barroco de Celanova</h5>
+                              <h5 class="text-dark text-center"><?= __('D2')?></h5>
                           </div>
                           <div class="carousel-item">
                               <img src="/assets/fotos/3.jpg" class="d-block w-100" alt="...">
-                              <h5 class="text-dark text-center">Sesión de fotos a cargo de Lorena Domínguez</h5>
+                              <h5 class="text-dark text-center"><?= __('D3')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/4.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Sesión de fotos a cargo de Lorena Domínguez</h5>
+                            <h5 class="text-dark text-center"><?= __('D4')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/5.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Sesión de fotos a cargo de Lorena Domínguez</h5>
+                            <h5 class="text-dark text-center"><?= __('D5')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/6.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Sesión de fotos a cargo de Lorena Domínguez</h5>
+                            <h5 class="text-dark text-center"><?= __('D6')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/7.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Inicios: Actuación coa Banda de Celanova. 2008. Na foto: Abel Fernández, Javier Gándara, Adrián López (de espaldas). 2008</h5>
+                            <h5 class="text-dark text-center"><?= __('D7')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/8.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Coa charanga BCB na torre de Vilanova dos Infantes. 2019.</h5>
+                            <h5 class="text-dark text-center"><?= __('D8')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/9.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Con Kenny Garrett no Café Latino de Ourense. 2018.</h5>
+                            <h5 class="text-dark text-center"><?= __('D9')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/10.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Cos compañeiros da banda do programa da TVG “Malo Será”: Cristian Leggiero, Pachi Cruz e Amaury Quintero. 2019.
+                            <h5 class="text-dark text-center"><?= __('D10')?>
                             </h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/11.JPG" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">En Dinant (Bélxica), a cidade natal do inventor do saxofón (Adolph Sax). 2019</h5>
+                            <h5 class="text-dark text-center"><?= __('D11')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/12.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Jam Session en Leuven (Bélxica), unha das cidades na que estudou. 2020.</h5>
+                            <h5 class="text-dark text-center"><?= __('D12')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/13.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Con Jesse Davis no club de jazz “Archiduc” (Bruselas, Bélxica). 2020.</h5>
+                            <h5 class="text-dark text-center"><?= __('D13')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/14.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Compartindo música con Wynton Marsalis (entre outros) nunha Jam Session en Bruselas (Bélxica). 2020.</h5>
+                            <h5 class="text-dark text-center"><?= __('D14')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/15.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Concerto en tempos de pandemia. 2020.</h5>
+                            <h5 class="text-dark text-center"><?= __('D15')?></h5>
                           </div>
                           <div class="carousel-item">
                             <img src="/assets/fotos/16.jpg" class="d-block w-100" alt="...">
-                            <h5 class="text-dark text-center">Descripción da foto: Con Alfonso Medela Trío no Café Latino (agosto de 2022).</h5> 
+                            <h5 class="text-dark text-center"><?= __('D16')?></h5> 
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>

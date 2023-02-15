@@ -26,7 +26,7 @@ require 'lang.php';
       <div id="wholeMenu" class="container-fluid">
         <div id="menuHeader">
             <!-- LOGO/NAME OF THE PAGE-->
-            <h1 class="display-3" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+            <h1 class="display-3" ><a id="nameLogo" href="index.php" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
             <!--BURGER MENU -->
          
             <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,24 +60,24 @@ require 'lang.php';
           <!-- 4TH OPTION -->
             <li  class="nav-item dropdown">
               <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Galeria
+              <?= __('Gallery')?>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="imaxes.php">Imaxes</a></li>
-                <li><a class="dropdown-item" href="videos.php">Videos</a></li>
+                <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
+                <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
               </ul>
             </li>
 
              <!-- 5TH OPTION -->
             <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="contacto.php">Contacto</a>
+              <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
             </li>
 
           <!-- LANGUAGE SELECTION -->
             <ul class="navbar-nav mb-2 mb-lg-0 me-4">
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                  <img src="/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>

@@ -1,3 +1,8 @@
+<?php 
+
+require 'lang.php';
+
+?>
 <!DOCTYPE html>
 <html lang="gal">
 		<!--Metadata-->
@@ -19,7 +24,7 @@
         <div id="wholeMenu" class="container-fluid ">
           <div id="menuHeader">
            <!-- LOGO/NAME OF THE PAGE-->
-           <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+           <h1 class="display-4" ><a id="nameLogo" href="index.php" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
    
            <!--BURGER MENU -->
           
@@ -53,17 +58,17 @@
           <!-- 4TH OPTION -->
             <li  class="nav-item dropdown">
               <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Galeria
+              <?= __('Gallery')?>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="imaxes.php">Imaxes</a></li>
-                <li><a class="dropdown-item" href="videos.php">Videos</a></li>
+                <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
+                <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
               </ul>
             </li>
 
              <!-- 5TH OPTION -->
             <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="contacto.php">Contacto</a>
+              <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
             </li>
 
           <!-- LANGUAGE SELECTION -->
@@ -73,9 +78,9 @@
                   <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>
-                  <li><a href="index.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
-                  <li><a href="index.php?lang=en" class="dropdown-item" value="en">EN</a></li>
+                  <li><a href="axenda.php?lang=es" class="dropdown-item" value="es">ES</a></li>
+                  <li><a href="axenda.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
+                  <li><a href=axenda.php?lang=en" class="dropdown-item" value="en">EN</a></li>
                 </ul>
               </li>
             </ul>
@@ -88,9 +93,9 @@
 
 
       <div id="eventsContainer" class="container-fluid row">
-        <h2 id="miniTitleEvents" class="fw-bold mb-5"> Axenda </h2>
+        <h2 id="miniTitleEvents" class="fw-bold mb-5"> <?= __('AxendaTitle')?> </h2>
         <div class="col-12 mx-auto">
-          <h2><strong> XANEIRO 2023</strong></h2>
+          <h2><strong><?= __('MesXaneiro')?>  2023</strong></h2>
             <ul class="timeline">
                 <li class="timeline-item row row-cols-auto rounded mt-3 p-4">
                     <div class="col col-sm-1" >
@@ -130,7 +135,7 @@
 
       </div>
       <div class="col-12 mx-auto">
-        <h2><strong> FEBREIRO 2023</strong></h2>
+        <h2><strong> <?= __('MesFebreiro')?> 2023</strong></h2>
           <ul class="timeline">
               
             <li class="timeline-item row row-cols-auto rounded mt-3 p-4">

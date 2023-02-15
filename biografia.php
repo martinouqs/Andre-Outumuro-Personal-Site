@@ -1,3 +1,8 @@
+<?php 
+
+require 'lang.php';
+
+?>
 <!DOCTYPE html>
 <html lang="gal">
 		<!--Metadata-->
@@ -19,7 +24,7 @@
         <div id="wholeMenu" class="container-fluid ">
          <div id="menuHeader">
           <!-- LOGO/NAME OF THE PAGE-->
-          <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+          <h1 class="display-4" ><a id="nameLogo" href="index.php" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
   
           <!--BURGER MENU -->
          
@@ -34,54 +39,54 @@
   
             <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0 float-end mt-4" >
 
-              <!-- 1ST OPTION   -->
+          <!-- 1ST OPTION   -->
 
-                <li  class="nav-item px-1" >
-                  <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
-                </li>
+            <li  class="nav-item px-1" >
+              <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
+            </li>
 
-              <!-- 2ND OPTION   -->
+          <!-- 2ND OPTION   -->
 
-                <li class="nav-item">
-                  <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
-                </li>
+            <li class="nav-item">
+              <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
+            </li>
 
-              <!-- 3RD OPTION -->
+          <!-- 3RD OPTION -->
 
-              <li  class="nav-item">
-                <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
-              </li>
+          <li  class="nav-item">
+            <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
+          </li>
 
-              <!-- 4TH OPTION -->
-                <li  class="nav-item dropdown">
-                  <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Galeria
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="imaxes.php">Imaxes</a></li>
-                    <li><a class="dropdown-item" href="videos.php">Videos</a></li>
-                  </ul>
-                </li>
-
-                <!-- 5TH OPTION -->
-                <li class="nav-item">
-                  <a id="menuElement" class="nav-link" href="contacto.php">Contacto</a>
-                </li>
-
-              <!-- LANGUAGE SELECTION -->
-                <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>
-                      <li><a href="index.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
-                      <li><a href="index.php?lang=en" class="dropdown-item" value="en">EN</a></li>
-                    </ul>
-                  </li>
-                </ul>
+          <!-- 4TH OPTION -->
+            <li  class="nav-item dropdown">
+              <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <?= __('Gallery')?>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
+                <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
               </ul>
+            </li>
+
+             <!-- 5TH OPTION -->
+            <li class="nav-item">
+              <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
+            </li>
+
+          <!-- LANGUAGE SELECTION -->
+            <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="biografia.php?lang=es" class="dropdown-item" value="es">ES</a></li>
+                  <li><a href="biografia.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
+                  <li><a href="biografia.php?lang=en" class="dropdown-item" value="en">EN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
           </div>
           
         </div>
@@ -90,11 +95,11 @@
     <div id="bioText" class="container-fluid p-lg-5 overflow-auto">
       <h4 id="miniTitleBio" class="fw-bold" >André Outumuro Quintas (1994).</h4>
       <br/>
-      <p>Pese a que os seus degoiros musicais eran evidentes dende moito antes, non é ata os 8 anos cando entra en contato co saxofón no conservatorio da súa vila natal (Celanova), empezando a formar parte da Banda Municipal de Música que leva o mesmo nome pouco tempo despois.</p>
+      <p><?= __('P1')?></p>
       
-      <p>Realiza os estudos profesionais de saxofón clásico, pero aos 20 anos empeza a sentirse atraído polo jazz da man de Paco Charlín no “Seminario Permanente de Jazz de Pontevedra”. Isto é o que o fai transladarse nun primeiro momento á Coruña para formarse con Roberto Somoza no Conservatorio Superior de Música de dita cidade, e posteriormente a Bélxica para estudar na “LUCA School of Arts” baixo a tutela de profesores como Frank Vaganée (Brussels Jazz Orchestra) ou Dré Pallamaerts (profesor do Conservatorio Superior de París). Paralelamente recibe formación complementaria de artistas como Chris Cheek, Sherman Irby, Ben van Gelder ou Dayna Stephens. </p>
+      <p><?= __('P2')?></p>
     
-      <p>Como intérprete destaca pola súa versatilidade: aínda que está especializado en música moderna, colabora habitualmente con grupos de música tradicional, folk, clásica e incluso de baile. Participa tamén en proxectos dramáticos e audiovisuais, destacando a pertenza ao elenco do programa Malo Será (Televisión de Galicia). Na área da docencia, ten exercido como profesor no Conservatorio Mayeusis de Vigo e en diversos institutos de educación secundaria. É, a maiores, graduado en Administración e Dirección de Empresas pola Universidade de Vigo e posee o “Máster Universitario en Formación do Profesorado” pola Universidade da Coruña.
+      <p><?= __('P3')?>
       </p>
        
     </div> 

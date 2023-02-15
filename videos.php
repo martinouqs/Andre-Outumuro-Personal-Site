@@ -1,3 +1,8 @@
+<?php 
+
+require 'lang.php';
+
+?>
 <!DOCTYPE html>
 <html lang="gal">
 		<!--Metadata-->
@@ -19,7 +24,7 @@
         <div id="wholeMenu" class="container-fluid ">
           <div id="menuHeader">
            <!-- LOGO/NAME OF THE PAGE-->
-           <h1 class="display-4" ><a id="nameLogo" href="index.html" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
+           <h1 class="display-4" ><a id="nameLogo" href="index.php" class="text-decoration-none font-weight-bold">AndréOutumuro</a></h1>
    
            <!--BURGER MENU -->
           
@@ -33,54 +38,55 @@
   
             <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0 float-end mt-4" >
 
-          <!-- 1ST OPTION   -->
+              <!-- 1ST OPTION   -->
 
-            <li  class="nav-item px-1" >
-              <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
-            </li>
+                <li  class="nav-item px-1" >
+                  <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
+                </li>
 
-          <!-- 2ND OPTION   -->
+              <!-- 2ND OPTION   -->
 
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
-            </li>
+                <li class="nav-item">
+                  <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
+                </li>
 
-          <!-- 3RD OPTION -->
+              <!-- 3RD OPTION -->
 
-          <li  class="nav-item">
-            <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
-          </li>
-
-          <!-- 4TH OPTION -->
-            <li  class="nav-item dropdown">
-              <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Galeria
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="imaxes.php">Imaxes</a></li>
-                <li><a class="dropdown-item" href="videos.php">Videos</a></li>
-              </ul>
-            </li>
-
-             <!-- 5TH OPTION -->
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="contacto.php">Contacto</a>
-            </li>
-
-          <!-- LANGUAGE SELECTION -->
-            <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>
-                  <li><a href="index.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
-                  <li><a href="index.php?lang=en" class="dropdown-item" value="en">EN</a></li>
-                </ul>
+              <li  class="nav-item">
+                <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
               </li>
-            </ul>
-          </ul>
+
+              <!-- 4TH OPTION -->
+                <li  class="nav-item dropdown">
+                  <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?= __('Gallery')?>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
+                    <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
+                  </ul>
+                </li>
+
+                <!-- 5TH OPTION -->
+                <li class="nav-item">
+                  <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
+                </li>
+
+              <!-- LANGUAGE SELECTION -->
+                <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="videos.php?lang=es" class="dropdown-item" value="es">ES</a></li>
+                      <li><a href="videos.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
+                      <li><a href="videos.php?lang=en" class="dropdown-item" value="en">EN</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </ul>
+
   
           </div>
           
@@ -89,7 +95,7 @@
 
       <div id="videosContainer" class="container mt-5 mb-5"> 
 
-          <h2 id="miniTitleVideos" class="fw-bold" >Repositorio de vídeos</h2>
+          <h2 id="miniTitleVideos" class="fw-bold" ><?= __('VideosTitle')?></h2>
         <div class="row mt-5">
           <div id="" class="col">
               <iframe id="iframeVideo" src="https://www.youtube.com/embed/IHmoa0q0tw8"  allowfullscreen title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>

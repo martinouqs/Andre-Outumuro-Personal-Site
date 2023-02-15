@@ -1,0 +1,42 @@
+<?php
+
+$lang = [
+
+	'Home'=>'Inicio',
+	'About'=>'Biografía',
+	'Calendar'=>'Axenda',
+	'Gallery'=>'Galería',
+	'Image'=>'Imaxes',
+	'Video'=>'Vídeos',
+	'Contact'=>'Contacto',
+	'P1'=>'Pese a que os seus degoiros musicais eran evidentes dende moito antes, non é ata os 8 anos cando entra en contato co saxofón no conservatorio da súa vila natal (Celanova), empezando a formar parte da Banda Municipal de Música que leva o mesmo nome pouco tempo despois.',
+	'P2'=>'Realiza os estudos profesionais de saxofón clásico, pero aos 20 anos empeza a sentirse atraído polo jazz da man de Paco Charlín no “Seminario Permanente de Jazz de Pontevedra”. Isto é o que o fai transladarse nun primeiro momento á Coruña para formarse con Roberto Somoza no Conservatorio Superior de Música de dita cidade, e posteriormente a Bélxica para estudar na “LUCA School of Arts” baixo a tutela de profesores como Frank Vaganée (Brussels Jazz Orchestra) ou Dré Pallamaerts (profesor do Conservatorio Superior de París). Paralelamente recibe formación complementaria de artistas como Chris Cheek, Sherman Irby, Ben van Gelder ou Dayna Stephens. ',
+	'P3'=>'Como intérprete destaca pola súa versatilidade: aínda que está especializado en música moderna, colabora habitualmente con grupos de música tradicional, folk, clásica e incluso de baile. Participa tamén en proxectos dramáticos e audiovisuais, destacando a pertenza ao elenco do programa Malo Será (Televisión de Galicia). Na área da docencia, ten exercido como profesor no Conservatorio Mayeusis de Vigo e en diversos institutos de educación secundaria. É, a maiores, graduado en Administración e Dirección de Empresas pola Universidade de Vigo e posee o “Máster Universitario en Formación do Profesorado” pola Universidade da Coruña.',
+	'AxendaTitle'=>'Axenda',
+	'VideosTitle'=>'Repositorio de vídeos',
+	'MesXaneiro'=>'XANEIRO',
+	'MesFebreiro'=>'FEBREIRO',
+	'GalleryTitle'=>'Galería fotográfica',
+	'ContactTitle'=>'Contacto',
+	'NamePlaceHolder'=>'Nome',
+	'MailPlaceHolder'=>'nome@email.com',
+	'MsgPlaceHolder'=>'Mensaxe',
+	'SendButton'=>'Enviar',
+	'D1'=>'Tocando no lexendario club belga L´Archiduc',
+	'D2'=>'Concerto no claustro barroco de Celanova',
+	'D3'=>'Sesión de fotos a cargo de Lorena Domínguez',
+	'D4'=>'Sesión de fotos a cargo de Lorena Domínguez',
+	'D5'=>'Sesión de fotos a cargo de Lorena Domínguez',
+	'D6'=>'Sesión de fotos a cargo de Lorena Domínguez',
+	'D7'=>'Inicios: Actuación coa Banda de Celanova. Na foto: Abel Fernández, Javier Gándara, Adrián López (de espaldas). 2008',
+	'D8'=>'Coa charanga BCB na torre de Vilanova dos Infantes. 2019.',
+	'D9'=>'Con Kenny Garrett no Café Latino de Ourense. 2018.',
+	'D10'=>'Cos compañeiros da banda do programa da TVG “Malo Será”: Cristian Leggiero, Pachi Cruz e Amaury Quintero. 2019.',
+	'D11'=>'En Dinant (Bélxica), a cidade natal do inventor do saxofón (Adolph Sax). 2019',
+	'D12'=>'Jam Session en Leuven (Bélxica), unha das cidades na que estudou. 2020.',
+	'D13'=>'Con Jesse Davis no club de jazz “Archiduc” (Bruselas, Bélxica). 2020.',
+	'D14'=>'Compartindo música con Wynton Marsalis (entre outros) nunha Jam Session en Bruselas (Bélxica). 2020.',
+	'D15'=>'Concerto en tempos de pandemia. 2020.',
+	'D16'=>'Descripción da foto: Con Alfonso Medela Trío no Café Latino (agosto de 2022).'
+
+];
