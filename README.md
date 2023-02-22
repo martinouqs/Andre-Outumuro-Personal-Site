@@ -1,2 +1,2 @@
 # WebPage
- Visit web page for a client
+ André Outumuro personal web site. Bio, contact, photo and video galleries, events...
