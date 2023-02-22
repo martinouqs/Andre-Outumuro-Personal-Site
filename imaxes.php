@@ -39,54 +39,54 @@ require 'lang.php';
   
             <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0 float-end mt-4" >
 
-              <!-- 1ST OPTION   -->
+            <!-- 1ST OPTION   -->
 
-                <li  class="nav-item px-1" >
-                  <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
-                </li>
-
-              <!-- 2ND OPTION   -->
-
-                <li class="nav-item">
-                  <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
-                </li>
-
-              <!-- 3RD OPTION -->
-
-              <li  class="nav-item">
-                <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
+              <li  class="nav-item px-1" >
+                <a id="menuElement" class="nav-link" href="index.php"><?= __('Home')?></a>
               </li>
 
-              <!-- 4TH OPTION -->
-                <li  class="nav-item dropdown">
-                  <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <?= __('Gallery')?>
+            <!-- 2ND OPTION   -->
+
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
+              </li>
+
+            <!-- 3RD OPTION -->
+
+            <li  class="nav-item">
+              <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
+            </li>
+
+            <!-- 4TH OPTION -->
+              <li  class="nav-item dropdown">
+                <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <?= __('Gallery')?>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
+                  <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
+                </ul>
+              </li>
+
+              <!-- 5TH OPTION -->
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
+              </li>
+
+            <!-- LANGUAGE SELECTION -->
+              <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
-                    <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
+                    <li><a href="imaxes.php?lang=es" class="dropdown-item">ES</a></li>
+                    <li><a href="imaxes.php?lang=en" class="dropdown-item">EN</a></li>
+                    <li><a href="imaxes.php?lang=gal" class="dropdown-item">GAL</a></li>
                   </ul>
                 </li>
-
-                <!-- 5TH OPTION -->
-                <li class="nav-item">
-                  <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
-                </li>
-
-              <!-- LANGUAGE SELECTION -->
-                <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="imaxes.php?lang=es" class="dropdown-item" value="es">ES</a></li>
-                      <li><a href="imaxes.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
-                      <li><a href="imaxes.php?lang=en" class="dropdown-item" value="en">EN</a></li>
-                    </ul>
-                  </li>
-                </ul>
-</ul>
+              </ul>
+            </ul>
           </div>
         </div>
       </nav>
@@ -257,7 +257,7 @@ require 'lang.php';
                             </h5>
                           </div>
                           <div class="carousel-item">
-                            <img src="/assets/fotos/11.JPG" class="d-block w-100" alt="...">
+                            <img src="/assets/fotos/11.jpg" class="d-block w-100" alt="...">
                             <h5 class="text-dark text-center"><?= __('D11')?></h5>
                           </div>
                           <div class="carousel-item">

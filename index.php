@@ -42,7 +42,7 @@ require 'lang.php';
           <!-- 1ST OPTION   -->
 
             <li  class="nav-item px-1" >
-              <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
+              <a id="menuElement" class="nav-link" href="index.php"><?= __('Home')?></a>
             </li>
 
           <!-- 2ND OPTION   -->
@@ -77,12 +77,12 @@ require 'lang.php';
             <ul class="navbar-nav mb-2 mb-lg-0 me-4">
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="index.php?lang=es" class="dropdown-item" value="es">ES</a></li>
-                  <li><a href="index.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
-                  <li><a href="index.php?lang=en" class="dropdown-item" value="en">EN</a></li>
+                  <li><a href="index.php?lang=es" class="dropdown-item">ES</a></li>
+                  <li><a href="index.php?lang=en" class="dropdown-item">EN</a></li>
+                  <li><a href="index.php?lang=gal" class="dropdown-item">GAL</a></li>
                 </ul>
               </li>
             </ul>

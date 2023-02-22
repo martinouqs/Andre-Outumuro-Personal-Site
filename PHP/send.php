@@ -1,6 +1,6 @@
 <?php 
 
-$correo = $_POST['correo'];
+$email = $_POST['email'];
 $nombre = $_POST['nombre'];
 $mensaje = $_POST['mensaje'];
 
@@ -13,7 +13,8 @@ $cuerpo = '
         <body> 
             <h1>SolicitudE de contacto.  </h1>
             <p> 
-              A persoa:  '.$nombre . ' <br>
+              A persoa:  '.$nombre.' <br>
+              Con correo: '.$email.' <br>
               Deixouche a seguinte mensaxe: '.$mensaje.' 
             </p> 
         </body>
@@ -26,7 +27,7 @@ $headers .= "Content-type: text/html; charset=UTF8\r\n";
 //dirección del remitente
 
 $headers .= "FROM: $nombre <$correo>\r\n";
-mail($destinatario,$asunto,$cuerpo,$headers);
+mail($destinatario,$cuerpo,$headers);
 
 echo "Correo enviado"; 
 

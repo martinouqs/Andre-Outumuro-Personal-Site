@@ -37,65 +37,62 @@ require 'lang.php';
             <!-- MENU OPTIONS -->
             <ul id="menuAfterLogo" class="navbar-nav me-auto mb-2 px-5 mb-lg-0 float-end mt-4" >
 
-          <!-- 1ST OPTION   -->
+            <!-- 1ST OPTION   -->
 
-            <li  class="nav-item px-1" >
-              <a id="menuElement" class="nav-link"  href="index.php"><?= __('Home')?></a>
+              <li  class="nav-item px-1" >
+                <a id="menuElement" class="nav-link" href="index.php"><?= __('Home')?></a>
+              </li>
+
+            <!-- 2ND OPTION   -->
+
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
+              </li>
+
+            <!-- 3RD OPTION -->
+
+            <li  class="nav-item">
+              <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
             </li>
 
-          <!-- 2ND OPTION   -->
-
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="biografia.php"><?= __('About')?></a>
-            </li>
-
-          <!-- 3RD OPTION -->
-
-          <li  class="nav-item">
-            <a id="menuElement" class="nav-link" href="axenda.php"><?= __('Calendar')?></a>
-          </li>
-
-          <!-- 4TH OPTION -->
-            <li  class="nav-item dropdown">
-              <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <?= __('Gallery')?>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
-                <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
-              </ul>
-            </li>
-
-             <!-- 5TH OPTION -->
-            <li class="nav-item">
-              <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
-            </li>
-
-          <!-- LANGUAGE SELECTION -->
-            <ul class="navbar-nav mb-2 mb-lg-0 me-4">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+            <!-- 4TH OPTION -->
+              <li  class="nav-item dropdown">
+                <a id="menuElement" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <?= __('Gallery')?>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="axenda.php?lang=es" class="dropdown-item" value="es">ES</a></li>
-                  <li><a href="axenda.php?lang=gal" class="dropdown-item" value="gal">GAL</a></li>
-                  <li><a href=axenda.php?lang=en" class="dropdown-item" value="en">EN</a></li>
+                  <li><a class="dropdown-item" href="imaxes.php"><?= __('Image')?></a></li>
+                  <li><a class="dropdown-item" href="videos.php"><?= __('Video')?></a></li>
                 </ul>
               </li>
+
+              <!-- 5TH OPTION -->
+              <li class="nav-item">
+                <a id="menuElement" class="nav-link" href="contacto.php"><?= __('Contact')?></a>
+              </li>
+
+            <!-- LANGUAGE SELECTION -->
+              <ul class="navbar-nav mb-2 mb-lg-0 me-4">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src = "/assets/icons/globe.png" alt="LanguageWorld" width="27em" height="27em"/>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="axenda.php?lang=es" class="dropdown-item">ES</a></li>
+                    <li><a href="axenda.php?lang=en" class="dropdown-item">EN</a></li>
+                    <li><a href="axenda.php?lang=gal" class="dropdown-item">GAL</a></li>
+                  </ul>
+                </li>
+              </ul>
             </ul>
-          </ul>
           </div>
         </div>
       </nav>
 
-
-
-
       <div id="eventsContainer" class="container-fluid row">
         <h2 id="miniTitleEvents" class="fw-bold mb-5"> <?= __('AxendaTitle')?> </h2>
         <div class="col-12 mx-auto">
-          <h2><strong><?= __('MesXaneiro')?>  2023</strong></h2>
+          <h2><strong> <?= __('MesXaneiro')?> 2023</strong></h2>
             <ul class="timeline">
                 <li class="timeline-item row row-cols-auto rounded mt-3 p-4">
                     <div class="col col-sm-1" >
@@ -116,7 +113,7 @@ require 'lang.php';
                     </div>
                       <div id="group" class="col col-sm-4">
                         <div id="groupImg">
-                          <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                          <img class="img-responsive img-fluid mb-2" src="/assets/icons/group.png" alt="" width="25em" height=25em"/>
                         </div>
                         <div id="groupTxt">
                           <h5 id="responsiveTitle" class="text-uppercase"><strong> Alfonso Medela Trío</strong></h5>
@@ -144,7 +141,7 @@ require 'lang.php';
               </div>
               <div class="col col-sm-4" id="location">
                   <div id="locationImg">
-                      <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/>
+                      <img class="img-responsive img-fluid" src="/assets/icons/location.png" alt="" width="25em" height=25em"/>
                   </div>
                   <div id="locationTxt">
                     <div id="placeLocation">
@@ -157,7 +154,7 @@ require 'lang.php';
               </div>
                 <div id="group" class="col col-sm-4">
                   <div id="groupImg">
-                    <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                    <img class="img-responsive img-fluid mb-2" src="/assets/icons/group.png" alt="" width="25em" height=25em"/>
                   </div>
                   <div id="groupTxt">
                     <h5 id="responsiveTitle" class="text-uppercase"><strong> BCB</strong></h5>
@@ -165,7 +162,7 @@ require 'lang.php';
                 </div>
                 <div id="eventsTime" class="col col-sm-2">
                   <div id="eventsTimeIcon">
-                    <img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/>
+                    <img class="img-responsive img-fluid mb-1" src="/assets/icons/clock.png" alt="" width="25em" height=25em"/>
                   </div>
                   <div id="eventsTimeTxt">
                     <h5 id="responsiveTitle" class="text-uppercase"><strong> 17:00</strong></h5>
@@ -179,7 +176,7 @@ require 'lang.php';
             </div>
             <div class="col col-sm-4" id="location">
                 <div id="locationImg">
-                    <img class="img-responsive img-fluid" src = "/assets/icons/location.png" alt="" width="25em" height=25em"/>
+                    <img class="img-responsive img-fluid" src="/assets/icons/location.png" alt="" width="25em" height=25em"/>
                 </div>
                 <div id="locationTxt">
                   <div id="placeLocation">
@@ -192,7 +189,7 @@ require 'lang.php';
             </div>
               <div id="group" class="col col-sm-4">
                 <div id="groupImg">
-                  <img class="img-responsive img-fluid mb-2" src = "/assets/icons/group.png" alt="" width="25em" height=25em"/>
+                  <img class="img-responsive img-fluid mb-2" src="/assets/icons/group.png" alt="" width="25em" height=25em"/>
                 </div>
                 <div id="groupTxt">
                   <h5 id="responsiveTitle" class="text-uppercase"><strong> BCB</strong></h5>
@@ -200,7 +197,7 @@ require 'lang.php';
               </div>
               <div id="eventsTime" class="col col-sm-2">
                 <div id="eventsTimeIcon">
-                  <img class="img-responsive img-fluid mb-1" src = "/assets/icons/clock.png" alt="" width="25em" height=25em"/>
+                  <img class="img-responsive img-fluid mb-1" src="/assets/icons/clock.png" alt="" width="25em" height=25em"/>
                 </div>
                 <div id="eventsTimeTxt">
                   <h5 id="responsiveTitle" class="text-uppercase"><strong> 21:00</strong></h5>
@@ -218,16 +215,16 @@ require 'lang.php';
     <footer>
 
       <a class="btn btn-floating p-1" href="https://es-es.facebook.com/andre.outumuroquintas" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></a>
+      ><img class="img-responsive img-fluid" src="/assets/icons/facebook.png" alt="LanguageWorld" width="35em" height="35em"/></a>
 
       <a class="btn btn-floating p-1" href="https://www.youtube.com/channel/UCMr8iUoOJ2Dwhs5GgsLQtZw" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
+      ><img class="img-responsive img-fluid" src="/assets/icons/youtube.png" alt="youtube img" width="40em"height="40em"/></a> 
 
       <a class="btn btn-floating p-1" href="https://www.instagram.com/andre_outumuro/?hl=es" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
+      ><img class="img-responsive img-fluid" src="/assets/icons/instagram.png" alt="instagram img" width="35em" height="35em"/></a>
 
      <a class="btn btn-floating p-1" href="https://www.linkedin.com/in/andr%C3%A9-outumuro-quintas-04450b109/" role="button"
-      ><img class="img-responsive img-fluid" src = "/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></a>
+      ><img class="img-responsive img-fluid" src="/assets/icons/linkedin.png" alt="linkedin img" width="35em" height=35em"/></a>
   
     </footer>
 
